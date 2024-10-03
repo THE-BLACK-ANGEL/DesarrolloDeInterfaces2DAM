@@ -6,14 +6,10 @@ import javafx.scene.control.Label;
 import javafx.stage.FileChooser;
 import javafx.scene.control.TextArea;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.io.*;
 import java.util.List;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.FileWriter;
-import java.io.BufferedWriter;
 
 
 public class HelloController {
