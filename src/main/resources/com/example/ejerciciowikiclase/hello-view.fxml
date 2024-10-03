@@ -3,21 +3,27 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="417.0" prefWidth="470.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.ejerciciowikiclase.HelloController">
+<VBox alignment="CENTER" prefHeight="417.0" prefWidth="470.0" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ejerciciowikiclase.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
     <!--Botones que están enlazados a los metodos-->
     <!--Boton para abrir archivo-->
     <Button fx:id="openFileButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#openFile" text="Abrir archivo" />
-   <Label fx:id="LabelAbrir" maxWidth="1.7976931348623157E308" />
+   <!--Label para mostrar archivo seleccionado-->
+    <Label fx:id="LabelAbrir" maxWidth="1.7976931348623157E308" />
     <!--Boton para guardar archivo-->
     <Button fx:id="saveFileButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#saveFile" text="Guardar archivo" />
-   <Label fx:id="LabelGuardar" maxWidth="1.7976931348623157E308" />
+   <!--Label para mostrar el archivo guardado-->
+    <Label fx:id="LabelGuardar" maxWidth="1.7976931348623157E308" />
     <!--Boton para abrir multiples archivos-->
     <Button fx:id="openMultipleFilesButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#openMultipleFiles" text="Abrir múltiples archivos" />
-   <Label fx:id="LabelMulti" maxWidth="1.7976931348623157E308" />
+    <!---->
+    <Label fx:id="LabelMulti" maxWidth="1.7976931348623157E308" />
+   <Label maxWidth="1.7976931348623157E308" text="Mostrar Archivo (En caso de selección individual) :" />
+   <TextArea fx:id="TextAreaAbrir" prefHeight="200.0" prefWidth="200.0" />
 
 </VBox>
