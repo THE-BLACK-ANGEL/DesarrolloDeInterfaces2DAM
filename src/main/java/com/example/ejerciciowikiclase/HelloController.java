@@ -25,11 +25,13 @@ public class HelloController {
     @FXML
     private void openFile()
     {
+
         //Declaramos un selector de archivo que nos permitira seleccionar un archivo y guardarlo de forma temoral en esta variable
         FileChooser fileChooser = new FileChooser();
-        /*Determinamos que tipo de archivo queremos seleccionar */
+        /*Determinamos que tipo de extension de archivo queremos seleccionar */
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Mamahuevo (*.txt)", "*.txt");
         fileChooser.getExtensionFilters().add(extFilter);
+
         //Seleccionamos el archivo que queremos usar abriendo una ventana a la hora de pulsar en el boton referenciado al objeto
         File selectedFile = fileChooser.showOpenDialog(openFileButton.getScene().getWindow());
         /*Si se ha seleccionado un archivo se mostrará el nombre del archivo y en caso de que no se seleccione saldra que no se ha seleccionado ningun archivo*/
